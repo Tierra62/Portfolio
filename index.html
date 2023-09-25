@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra Mbuyamba</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/555d2803b4.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div id="header">
+      
+      <div class="container">
+        <nav>
+          <div></div>
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" id="close-menu" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" id="open-menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Software Engineer</p>
+          <h1>Hi, I'm <span>Tierra</span><br />Mbuyamba!</h1>
+          
+          
+        </div>
+      </div>
+    </div>
+    <!------------------- about ------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/grad.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>  I'm a dedicated Full Stack Software Engineer with a passion for developing creative, innovative, and highly efficient web applications. My journey into the tech world began after completing my bachelor's degree in 2021 when I recognized that technology was my true calling.
+
+              While I didn't pursue a traditional computer science path, I bring a unique blend of technical expertise and creative problem-solving to every project. My deep commitment to learning and self-improvement led me to a demanding and fast-paced coding bootcamp, which I successfully completed, earning me the title of a full stack software engineer.
+            
+              During this intensive program, I had the privilege of working with Makai Rentals, where I gained hands-on experience in both frontend and backend development. My skill set includes a strong foundation in HTML, CSS, JavaScript, and ReactJs, as well as proficiency in SQL, C#, and jQuery.
+            
+              What sets me apart is my ability to work seamlessly with cross-functional teams, including product owners, designers, and fellow developers. I thrive in agile development environments, and I relish the opportunity to take projects from concept to deployment, consistently delivering high-quality, user-friendly, and scalable solutions.
+            
+              I'm proactive in keeping up-to-date with the latest industry trends and technologies, ensuring that I remain at the cutting edge of software development. As a dedicated technology enthusiast, I'm committed to giving back to the tech community and creating a positive impact on society through my work.
+            
+              I invite you to connect with me to explore how I can contribute to your organization's growth. My contact information can be found in the contact section, and I'm eager to discuss how I can bring your software development ideas to life. </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span> Backend </span><br> SQL,T-SQL C#, .NET Core, RESTful API, ASP.Net</li>               
+                <li><span>Frontend</span><br> HTML/CSS, JavaScript, Reactjs, jQuery, Formik, AJAX, Axios</li>  
+                <li><span>Other</span><br> Teamwork, Adaptability, Communication, Creativity, Problem Solving</li>               
+
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Nov 2022-Current</span><br> Full Stack Software Engineer at Makai Rentals</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Aug 2017-May 2021</span><br> Austin Peay State University, BS</li>               
+                <li><span>Nov 2022-May 2023</span><br> Sabio School of Software Engineering, Full Stack Development</li>               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------- projects ------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src ="images/work2.png">
+            <div class="layer">
+              <h3>Highlight Reel Approval Form</h3>
+              <p>Administrators are able to login and approve photos to be part of the highlight reel carousel!</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src ="images/work.png">
+            <div class="layer">
+              <h3>Highlight Reel Carousel</h3>
+              <p> The Highlight Reel showcases photos uploaded by satisfied customers in a time based carousel component on the home page!</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://makai.azurewebsites.net/" class="btn">See Website <i class="fa-solid fa-arrow-up-right-from-square fa-beat" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+      
+
+      <!------------------contact------------------------>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope fa-spin" style="color: #ff1900;"></i> : tierrambuyamba@gmail.com</p>
+              <p><i class="fa-solid fa-phone fa-spin-pulse" style="color: #ff1900;"></i> : 470-219-4513</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tierrambuyamba/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Tierra62"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href="images/TierraCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p> Copyright © Tierra M. Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> by ME </p>
+        </div>
+      </div>
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
